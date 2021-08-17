@@ -1,4 +1,4 @@
-package day7.shape;
+package day7.abstracttt;
 
 public class Shapereal {
 

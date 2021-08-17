@@ -1,4 +1,4 @@
-package day7.shape;
+package day7.abstracttt;
 
 //圆
 public class ShapeCircle extends Shape {

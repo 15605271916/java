@@ -1,4 +1,4 @@
-package day7.extendse;
+package day7.extendsss;
 
 public class Student extends Person{
 	
