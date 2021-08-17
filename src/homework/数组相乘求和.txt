@@ -1,0 +1,5 @@
+数组1和数组2相乘:arr[index]=arr1[index]*arr2[index]
+对乘积数组arr求和：float sum=0.0f;
+		  for (float f : arr){
+			sum+=f;
+		  }
