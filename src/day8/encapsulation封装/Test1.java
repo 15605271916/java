@@ -1,4 +1,4 @@
-package day8.Encapsulation封装;
+package day8.encapsulation封装;
 
 public class Test1 {
 

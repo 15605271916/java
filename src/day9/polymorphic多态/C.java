@@ -20,8 +20,9 @@ public class C {
 		return "qwer";
 	}
 	
-	public void show5(){
+	public String show5(){
 		System.out.println("c show5");
+		return "qqwweerr";
 		
 	}
 
