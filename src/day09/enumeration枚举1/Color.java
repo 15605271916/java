@@ -1,4 +1,4 @@
-package day9.enumeration枚举;
+package day09.enumeration枚举1;
 
 public enum Color {
 		RED,BLUE,GREEN

@@ -1,4 +1,4 @@
-package day9.polymorphic多态;
+package day09.polymorphic多态;
 
 public class C {
 	

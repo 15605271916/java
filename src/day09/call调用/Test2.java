@@ -1,4 +1,4 @@
-package day9.call调用;
+package day09.call调用;
 
 public class Test2 extends A {
 	

@@ -1,4 +1,4 @@
-package day8.static静态;
+package day08.static静态;
 
 public class Test2 extends User{
 		int a=1;

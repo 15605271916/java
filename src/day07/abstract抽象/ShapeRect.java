@@ -1,4 +1,4 @@
-package day7.abstract抽象;
+package day07.abstract抽象;
 //矩形
 public class ShapeRect extends Shape {
 

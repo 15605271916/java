@@ -1,4 +1,4 @@
-package day7.extends继承;
+package day07.extends继承;
 
 public class Test2 {
 	

@@ -1,4 +1,4 @@
-package day9.generate生成get和set;
+package day09.generate生成get和set;
 
 public class B {
 		private int id;

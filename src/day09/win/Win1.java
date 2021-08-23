@@ -1,4 +1,4 @@
-package day9.win;
+package day09.win;
 
 import javax.swing.JFrame;
 

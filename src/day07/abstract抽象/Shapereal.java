@@ -1,4 +1,4 @@
-package day7.abstract抽象;
+package day07.abstract抽象;
 
 public class Shapereal {
 

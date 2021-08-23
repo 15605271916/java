@@ -1,4 +1,4 @@
-package day8.static静态;
+package day08.static静态;
 
 public class User {
 	public static int a=1;

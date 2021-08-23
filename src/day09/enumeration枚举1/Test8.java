@@ -1,4 +1,4 @@
-package day9.enumeration枚举;
+package day09.enumeration枚举1;
 //枚举其实也是一种类，和普通类一样可以使用构造函数，但是不能继承别的类，因为在底层枚举类已经继承了一个隐藏的父类——Enum类
 //语法略有不同
 public class Test8 {

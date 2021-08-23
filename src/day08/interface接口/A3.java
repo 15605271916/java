@@ -1,4 +1,4 @@
-package day8.interface接口;
+package day08.interface接口;
 
 public class A3 implements IA, IA2 {
 

@@ -1,4 +1,4 @@
-package day7;
+package day07;
 
 public class Test1 {
 	//字符串==判断

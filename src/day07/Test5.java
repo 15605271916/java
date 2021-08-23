@@ -1,4 +1,4 @@
-package day7;
+package day07;
 //递归调用。自己调用自己，类似于循环
 	class A{
 		int i1;
