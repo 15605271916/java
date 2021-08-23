@@ -1,13 +1,13 @@
 package day10.innerclass内部类;
 
-import day10.innerclass内部类.Outer01.Inner;
-import day10.innerclass内部类.Outer01.Inner2;
+import day10.innerclass内部类.Outer.Inner;
+import day10.innerclass内部类.Outer.Inner2;
 
 public class Test1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-			Outer01 outer=new Outer01();
+			Outer outer=new Outer();
 			outer.show1();
 			
 			System.out.println("在外部实例化非静态内部类");
@@ -21,10 +21,10 @@ public class Test1 {
 			
 			System.out.println("在外部实例化静态内部类");
 
-			Inner2 inner2=new Outer01.Inner2();
+			Inner2 inner2=new Outer.Inner2();
 			inner2.show1();
 			
-			System.out.println(Outer01.Inner2.e);
+			System.out.println(Outer.Inner2.e);
 			
 	}
 

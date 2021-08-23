@@ -1,5 +1,6 @@
 package day10.innerclass内部类;
 
+
 public class Test3 {
 
 	public static void main(String[] args) {
@@ -8,11 +9,28 @@ public class Test3 {
 		//
 //		IA a=new A();
 //		a.show1();
-		
-		IA a =new IA() {
+IA a=new IA() {
 			
-			
+			public void show1() {
+
+					System.out.println("匿名内部类show1");
+				
+			}
 		};
+		
+		IA a2=new IA() {
+			
+			@Override
+			public void show1() {
+
+					System.out.println("匿名内部类show12");
+				
+			}
+		};
+		
+		
+		a.show1();
+		a2.show1();
 		
 	}
 
