@@ -1,6 +1,6 @@
 package day1103.常用类1;
 
-public class Test9 {
+public class No1Wrapper包装类 {
 	
 	public static void main(String[] args) {
 		
