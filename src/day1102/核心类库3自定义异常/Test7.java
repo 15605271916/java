@@ -1,0 +1,26 @@
+package day1102.核心类库3自定义异常;
+
+import java.util.Scanner;
+
+public class Test7 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		String info;
+		while (!(info = sc.nextLine()).equals("bye")) {
+			System.out.println(info);
+
+			if (info.equals("1")) {
+				MyException1 e1 = new MyException1("自己业务异常1");
+				try {
+					throw e1;
+				} catch (Exception e) {
+					System.out.println(e);
+				}
+			} else if (info.equals("2")) {
+			}
+		}
+	}
+}
