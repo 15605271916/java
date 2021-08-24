@@ -1,4 +1,4 @@
-package day10.核心类库;
+package day10.核心类库1;
 
 import java.util.Scanner;
 

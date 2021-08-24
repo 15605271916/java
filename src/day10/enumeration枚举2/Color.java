@@ -1,4 +1,4 @@
-package day10.enumerate枚举2;
+package day10.enumeration枚举2;
 
 public enum Color {
 	RED("red"), //public static final Color red;
