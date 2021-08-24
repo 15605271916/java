@@ -7,7 +7,7 @@ public class AImpl extends A{
 
 	@Override
 	public void show1() throws IOException {
-		super.show1();
+//		super.show1();
 	}
 
 	@Override

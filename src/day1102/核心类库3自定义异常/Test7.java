@@ -20,7 +20,14 @@ public class Test7 {
 					System.out.println(e);
 				}
 			} else if (info.equals("2")) {
+				MyException2 e2=new MyException2();
+				try {
+					throw e2;
+				}catch (Exception e) {
+					System.out.println(e);
+				}
 			}
 		}
+		System.out.println("结束");
 	}
 }
