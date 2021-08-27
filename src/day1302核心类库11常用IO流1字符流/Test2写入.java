@@ -8,7 +8,7 @@ import java.io.OutputStream;
 
 import javax.print.attribute.standard.OutputDeviceAssigned;
 
-public class No2写入 {
+public class Test2写入 {
 
 	public static void main(String[] args) throws IOException {
 		

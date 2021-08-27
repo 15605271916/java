@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class No1读取 {
+public class Test1读取 {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub

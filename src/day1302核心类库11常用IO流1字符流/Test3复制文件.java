@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class No3复制文件 {
+public class Test3复制文件 {
 
 	public static void main(String[] args) throws IOException {
 

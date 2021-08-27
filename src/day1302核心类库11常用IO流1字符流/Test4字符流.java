@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
 
-public class No4字符流 {
+public class Test4字符流 {
 
 	public static void main(String[] args) throws Exception {
 
