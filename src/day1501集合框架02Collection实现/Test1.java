@@ -1,4 +1,4 @@
-package day1501集合框架02Set实现;
+package day1501集合框架02Collection实现;
 
 import java.util.ArrayList;
 import java.util.HashSet;
