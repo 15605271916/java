@@ -1,4 +1,4 @@
-package day1404集合框架01collection接口01;
+package day1404集合框架01Collection接口和实现;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
