@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			table {
+				border: #FF0000 1px solid;
+				border-collapse: collapse;
+				width: 300px;
+			}
+
+			table th {
+				border: #FF0000 1px solid;
+				background-color: bisque;
+			}
+			table td{
+				border: #FF0000 1px solid;
+				padding: 3px;
+			}
+			table tbody tr:nth-child(odd){
+				background-color: #d3d3d3;
+				
+			}
+			table tbody tr:nth-child(even){
+				background-color: #9c9c9c;
+				
+			}
+		</style>
+
+	</head>
+	<body>
+		<table>
+			<thead>
+				<th>用户名</th>
+				<th>性别</th>
+				<th>年龄</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td id="d1">&nbsp;</td>
+					<td id="d2">&nbsp;</td>
+					<td id="d3">&nbsp;</td>
+				</tr>
+				<tr>
+					<td id="d4">&nbsp;</td>
+					<td id="d5">&nbsp;</td>
+					<td id="d6">&nbsp;</td>
+				</tr>
+				<tr>
+					<td id="d7">&nbsp;</td>
+					<td id="d8">&nbsp;</td>
+					<td id="d9">&nbsp;</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+	<script>
+		var a1=prompt('请输入用户1的姓名:')
+		var b1=prompt('请输入用户1的性别:')
+		var c1=prompt('请输入用户1的年龄:')
+		d1.innerText = a1;
+		d2.innerText = b1;
+		d3.innerText = c1;
+		var a2=prompt('请输入用户2的姓名:')
+		var b2=prompt('请输入用户2的性别:')
+		var c2=prompt('请输入用户2的年龄:')
+		d4.innerText = a2;
+		d5.innerText = b2;
+		d6.innerText = c2;
+		var a3=prompt('请输入用户3的姓名:')
+		var b3=prompt('请输入用户3的性别:')
+		var c3=prompt('请输入用户3的年龄:')
+		d7.innerText = a3;
+		d8.innerText = b3;
+		d9.innerText = c3;
+	</script>
+</html>

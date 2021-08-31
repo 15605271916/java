@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>map实现重复技术</title>
+		<script>
+			var str = "aabbccdae";
+			while (str.length != 0) {
+				var fir = str.charAt(0);
+				var c = 0;
+				while (true) {
+					if (str.includes(fir)) {
+						str = str.replace("");
+						c++
+					}
+					break;
+				}
+			}
+			if (str.length == 0) {
+				break;
+			}
+			document.write(fir + c);
+		</script>
+
+
+	</head>
+	<body>
+	</body>
+</html>

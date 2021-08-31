@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var data = {
+				"江苏省": ["南京市", "苏州市", "常州市"],
+				"安徽省": ["合肥市", "滁州市", "芜湖市", "蚌埠市"],
+				"浙江省": ["杭州市", "湖州市", "宁波市", "嘉兴市"],
+				"山东省": ["济南市", "青岛市", "日照市", "威海市"],
+			}
+			window.onload = function() {
+				var p = document.getElementById("p");
+				for (var a in data)
+					var op = document.createElement("option");
+				op.value = province;
+				op.innerHTML = province;
+				p.appendChild(op);
+			}
+
+			function getcity(obj) {
+				var citys = data[obj.value];
+				var c = document.getElementById("c");
+				c.innerHTML = '<option value="0">==请选择城市==</option>';
+
+				for (var city of citys) {
+					var op = document.createElement("option");
+					op.value = city;
+					op.innerHTML = city;
+					c.appendChild(op);
+				}
+			}
+			
+			function add(){
+				var flag=true;
+				
+				var account=document.getElementById("account");
+				var name=document.getElementById("name");
+				var pwd1=document.getElementById("pwd1");
+				var pwd2=document.getElementById("pwd2");
+				
+				
+				if (account.value==""){
+					var flag=false;
+					account.nextElementSibling.innerHTML="账号不能为空";
+				}else{account.nextElementSibling.innerHTML="";}
+				
+				if (name.value==""){
+					var flag=false;
+					name.nextElementSibling.innerHTML="姓名不能为空";
+				}else{name.nextElementSibling.innerHTML="";}
+				
+				if (pwd1.value==""){
+					var flag=false;
+					pwd1.nextElementSibling.innerHTML="密码不能为空";
+				}else{pwd1.nextElementSibling.innerHTML="";}
+				
+				if (pwd2.value==""){
+					var flag=false;
+					pwd2.nextElementSibling.innerHTML="确认密码不能为空";
+				}else{pwd2.nextElementSibling.innerHTML="";}
+				
+				if(pwd1.value!=pwd2.value){
+					var flag=false;
+					pwd2.nextElementSibling.innerHTML="密码不一致";
+				}else{pwd2.nextElementSibling.innerHTML="";}
+				
+				
+				
+				if(flag){
+					alert("保存");
+				}
+			}
+		</script>
+
+		<style>
+		span{
+			color: #FF0000;
+			font-size: 14px;
+		}
+
+		</style>
+
+	</head>
+	<body>
+		账号：<input id='account' /><span><!-- 账号不能为空 --></span> <br />
+		
+		姓名：<input id='name' /><span><!-- 姓名不能为空 --></span> <br />
+		
+		密码：<input id="pwd1" type="password" /><span><!-- 密码不能为空 --></span><br />
+
+		确认：<input id='pwd2' type="password" /><span><!-- 密码不能为空 --></span><br />
+
+		性别：<input checked="checked" type="radio" name="sex" value="男" />男
+		<input type="radio" name="sex" value="女" />女<br />
+
+		年龄：<input /><span><!-- 年龄不能为空 --></span><br />
+
+		生日：<input type="date" /><br />
+
+		省市：<select onchange="getcity(this)" id="p">
+			<option value="0">==请选择省份==</option>
+			<option value="江苏省">==江苏省==</option>
+			<option value="安徽省">==安徽省==</option>
+			<option value="浙江省">==浙江省==</option>
+			<option value="山东省">==山东省==</option>
+		</select>
+		<select id="c">
+			<option value="0">==请选择城市==</option>
+		</select>
+		<span><!-- 城市不能为空 --></span>
+		<br />
+
+		地址：<input /><span><!-- 地址不能为空 --></span><br />
+
+		电话：<input /><span><!-- 电话不能为空 --></span><br />
+
+		<input type="button" value="注 册" onclick="add()" /> <input type="button" value="取 消" />
+
+	</body>
+</html>

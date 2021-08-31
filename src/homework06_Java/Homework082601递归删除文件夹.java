@@ -1,8 +1,8 @@
-package homework;
+package homework06_Java;
 
 import java.io.File;
 
-public class Test1 {
+public class Homework082601递归删除文件夹 {
 
 	public static void deleteAll(File file) {
 

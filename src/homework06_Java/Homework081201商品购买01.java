@@ -1,8 +1,8 @@
-package homework;
+package homework06_Java;
 
 import java.util.Scanner;
 
-public class Tang {
+public class Homework081201商品购买01 {
 
 	public static void main(String[] args) {
 		

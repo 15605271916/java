@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../老师的/day20/jquery-1.10.2.js"></script>
+		<script>
+		
+			function toggle1() {
+				$("#a1").toggle(800,function() {});
+			}
+
+			function toggle2() {
+				$("#b1").toggle(800,function() {});
+			}
+			
+			function toggle3() {
+				$("#c1").toggle(800,function() {});
+			}
+			
+		</script>
+		<style>
+			
+			ul{
+				width: 70px;
+				padding: 0;
+				list-style-type: none;
+			}
+			
+			ul li{
+				background-color: blanchedalmond;
+			}
+			
+			ul li ol{
+				padding: 0px;
+				list-style-type: none;
+				display: none;
+			}
+			
+			ul li ol li{
+				background-color: aquamarine;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li onclick="toggle1()">第一章
+				<ol id="a1">
+					<li>项目1</li>
+					<li>项目2</li>
+				</ol>
+			</li>
+		</ul>
+		<ul>
+			<li onclick="toggle2()">第二章
+				<ol id="b1">
+					<li>项目1</li>
+					<li>项目2</li>
+					<li>项目3</li>
+				</ol>
+			</li>
+		</ul>
+		<ul>
+			<li onclick="toggle3()">第三章
+				<ol id="c1">
+					<li>项目1</li>
+					<li>项目2</li>
+					<li>项目3</li>
+				</ol>
+			</li>
+		</ul>
+	</body>
+</html>

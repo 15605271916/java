@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#id1 {
+				list-style-type: none;
+			}
+		
+			#id2 {
+				background-color: cornflowerblue;
+				font-weight: bold;
+				width: 80px;
+				padding: 3px;
+			}
+		
+			#id3,#id4,#id5{
+				width: 80px;
+				padding: 3px;
+				background-color: aquamarine;
+				display: none;
+		
+			}
+		</style>
+		<script>
+			function change1() {
+				var a1=document.getElementById("id3");
+				a1.style.display="block";
+				
+				var a2=document.getElementById("id4");
+				a2.style.display="none"
+				
+				var a3=document.getElementById("id5");
+				a3.style.display="block"
+				
+			}
+			function change2() {
+				var a1=document.getElementById("id3");
+				a1.style.display="none";
+				
+				var a2=document.getElementById("id4");
+				a2.style.display="block"
+				
+				var a3=document.getElementById("id5");
+				a3.style.display="none"
+				}
+				
+		</script>
+		
+	</head>
+	<body>
+		
+			<ul id='id1' >
+				<li id='id2' onclick="change1()">第一个菜单</li>
+				<li id='id3'>第一章</li>
+				<li id='id5'>第一章</li>
+			</ul>
+			<ul id='id1' >
+				<li id='id2' onclick="change2()">第二个菜单</li>
+				<li id='id4'>第一章</li>
+			
+
+		
+
+
+
+
+
+
+	</body>
+</html>

@@ -1,8 +1,8 @@
-package homework;
+package homework06_Java;
 
 import java.util.Scanner;
 
-public class Tang2 {
+public class Homework081601商品购买02 {
 
 	public static void main(String[] args) {
 		boolean b1 = true;

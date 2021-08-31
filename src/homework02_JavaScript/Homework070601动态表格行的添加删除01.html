@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function add(obj) {
+				var user = prompt('请输入用户信息，中间用', '隔开)；
+					user = user.split(',');
+					var name = user[0];
+					var sex = user[1];
+					var age = user[2];
+
+					var td1 = document.getElementById('td'); td1.innerHTML = name;
+
+					var td2 = document.getElementById('td'); td2.innerHTML = sex;
+
+					var td3 = document.getElementById('td'); td3.innerHTML = age;
+
+					var tr = document.createElement("tr");
+
+					tr.appendChild(td1); tr.appendChild(td2); tr.appendChild(td3); tr.appendChild(td4);
+
+					var tbody = document.getElementById('td1').lastElementChild;
+					var ctr = obj.parentNode.parentNode;
+					var ntr = obj.ctr.nextElementSibling; tbody.insertBefore(tr, ctr);
+				}
+		</script>
+		<style>
+
+
+		</style>
+
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th>姓名</th>
+					<th>性别</th>
+					<th>年龄</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr></tr>
+				<td>张三</td>
+				<td>男</td>
+				<td>22</td>
+				<td><a href="#" onclick="add()">添加</a><a href="#" onclick="">删除</a></td>
+				</tr>
+			</tbody>
+		</table>
+
+
+
+	</body>
+</html>

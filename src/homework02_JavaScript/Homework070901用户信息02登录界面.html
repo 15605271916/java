@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用户登录</title>
+		<script>
+			
+			function login(){
+				
+				//从本地获取数据
+				//从页面上获取数据
+				var account=document.getElementById("account").value;
+				var pwd=document.getElementById("pwd").value;
+				
+				
+				var users=localStorage.getItem("users");
+				users=JSON.parse(users);
+				
+				var flag=false;
+				
+				for(var user of users){
+					
+					if(account==user.account&&pwd==user.pwd){
+						
+						//有这个用户
+						flag=true;
+						break;
+						
+					}
+					
+				}
+				
+				if(flag){
+					
+					location.href="test2.html";
+					
+				}else{
+					
+					alert("账号和密码不一致")
+				}
+				
+				
+				
+				
+			}
+			
+		</script>
+	</head>
+	<body>
+		
+		账号:<input id="account" /><br/>
+		密码:<input type="password"  id="pwd"/><br/>
+		<input type="button" value="登录" onclick="login()"/>
+		<a href="01注册界面.html">还没有账号，请先注册</a>
+		
+	</body>
+</html>

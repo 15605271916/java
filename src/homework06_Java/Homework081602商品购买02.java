@@ -1,8 +1,8 @@
-package homework;
+package homework06_Java;
 
 import java.util.Scanner;
 
-public class Tang1 {
+public class Homework081602商品购买02 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

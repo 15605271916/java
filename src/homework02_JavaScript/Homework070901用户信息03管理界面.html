@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用户列表</title>
+		<script>
+			function del(obj, account) {
+				if (confirm("确定要删除吗")) {
+					obj.parentNode.parentNode.remove();
+					var users = localStorage.getItem("users");
+					users = JSON.parse(users);
+					var index = 0;
+					for (var user of users) {
+						if (account == user.account) {
+							users.splice(index, 1);
+							break;
+						}
+						index++;
+					}
+					localStorage.setItem("users", JSON.stringify(users));
+				}
+			}
+			window.onload = function() {
+				//从本地把数据写到页面上
+				var users = localStorage.getItem("users");
+				users = JSON.parse(users);
+				var tb = document.getElementById("tb");
+				var tbody = tb.children[1];
+				for (var user of users) {
+					tbody.innerHTML += `
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>${user.account}</td>
+						<td>${user.name}</td>
+						<td>${user.address}</td>
+						<td><a href="javascript:void(0)" onclick="del(this,'${user.account}')">删除</a> </td>
+					</tr>
+					`;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<table id="tb">
+			<head>
+				<tr>
+					<th>选择</th>
+					<th>账号</th>
+					<th>姓名</th>
+					<th>地址</th>
+					<th>操作</th>
+				</tr>
+			</head>
+			<tbody>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="5">
+						<input type="checkbox">全选
+						<a href="javascript:void(0)">批量删除</a>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>
