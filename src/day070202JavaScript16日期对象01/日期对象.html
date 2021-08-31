@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>时间</title>
+		<script>
+			// 两个时间戳：1970/1900
+			var d = new Date();
+			document.write(d);
+			document.write("<br />")
+			var d = new Date(1624078790000);
+			document.write(d);
+			document.write("<br />")
+			var d = new Date('2020/1/1 15:30:8');
+			document.write(d);
+			document.write("<br />")
+			var d = new Date(2020, 0, 1, 15, 30, 8);
+			document.write(d);
+			document.write("<br />");
+			var d = new Date();
+			d.setYear(2020);
+			d.setMonth(0);
+			d.setDate(1)
+			document.write(d);
+			document.write("<br />")
+			function t1(){
+				var d=new Date();
+				var h=d.getHours()
+				var m=d.getMinutes()
+				var s=d.getSeconds()
+				
+				document.getElementById("times").innerHTML=h
+				setTimeout(t1,500)
+			}
+			window.onload=t1
+		</script>
+
+	</head>
+	<body>
+		<div id=times;   style="border: aqua 1px solid;"></div>
+		
+		
+	</body>
+</html>

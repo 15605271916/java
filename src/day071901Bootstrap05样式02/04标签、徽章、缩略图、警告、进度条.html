@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			标签
+			徽章
+			缩略图
+			警告
+			进度条
+		</title>
+		<link href="../../css/bootstrap.css" / rel="stylesheet">
+		<script src="../day(7.15)/jquery-1.10.2.js"></script>
+		<script src="../../js/bootstrap.js"></script>
+	</head>
+	<body>
+		<h2>一、标签</h2>
+		<h1>Example Heading <span class="label label-default">Label</span></h1>
+		<h2>Example Heading <span class="label label-default">Label</span></h2>
+		<h3>Example Heading <span class="label label-default">Label</span></h3>
+		<h4>Example Heading <span class="label label-default">Label</span></h4>
+
+		<span class="label label-default">默认标签</span>
+		<span class="label label-primary">主要标签</span>
+		<span class="label label-success">成功标签</span>
+		<span class="label label-info">信息标签</span>
+		<span class="label label-warning">警告标签</span>
+		<span class="label label-danger">危险标签</span>
+		<br />
+		<br />
+
+		<h2>二、徽章</h2>
+		<span class="badge" style="color: red;">10</span>
+		<span class="badge" style="color: #00FFFF;">5</span>
+
+		<h2>三、缩略图</h2>
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<div class="thumbnail">
+					<img src="../图片/u=3752970245,2554658526&fm=26&fmt=auto&gp=0.webp" />
+					<div class="caption">
+						<h3><a href="#">Jaguar</a></h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="thumbnail">
+					<img src="../图片/u=3752970245,2554658526&fm=26&fmt=auto&gp=0.webp" />
+					<div class="caption">
+						<h3><a href="#">Jaguar</a></h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="thumbnail">
+					<img src="../图片/u=3752970245,2554658526&fm=26&fmt=auto&gp=0.webp" />
+					<div class="caption">
+						<h3><a href="#">Jaguar</a></h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="thumbnail">
+					<img src="../图片/u=3752970245,2554658526&fm=26&fmt=auto&gp=0.webp" />
+					<div class="caption">
+						<h3><a href="#">Jaguar</a></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h2>四、警告</h2>
+		<div class="alert alert-success">成功！很好地完成了提交。</div>
+		<div class="alert alert-info">信息！请注意这个信息。</div>
+		<div class="alert alert-warning">警告！请不要提交。</div>
+		<div class="alert alert-danger">错误！请进行一些更改。</div>
+
+		<div class="alert alert-success alert-dismissable">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+				&times;
+			</button>
+			成功！很好地完成了提交。
+		</div>
+		<div class="alert alert-info alert-dismissable">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+				&times;
+			</button>
+			信息！请注意这个信息。
+		</div>
+		<div class="alert alert-warning alert-dismissable">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+				&times;
+			</button>
+			警告！请不要提交。
+		</div>
+		<div class="alert alert-danger alert-dismissable">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+				&times;
+			</button>
+			错误！请进行一些更改。
+		</div>
+
+		<h2>五、进度条</h2>
+		<div class="progress progress-striped" style="height: 30px;">
+			<div id="qqq" class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+				<span class="sr-only">1213280733</span>
+			</div>
+		</div>
+		<script>
+			function show() {
+				if ($("#qqq").width() >= 1200) {
+					// $("#qqq").removeClass()
+					// $("#qqq").addClass()
+				} else {
+					$("#qqq").width($("#qqq").width() + 200)
+				}
+			}
+
+			$(function() {
+				setInterval(show, 20)
+			})
+		</script>
+	</body>
+</html>

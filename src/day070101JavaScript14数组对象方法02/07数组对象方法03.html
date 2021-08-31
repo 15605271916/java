@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			// set对象
+			document.write(+0 === -0);
+			document.write("<br />")
+			document.write(undefined === -0);
+			document.write("<br />")
+			var set = new Set();
+			set.add(1);
+			set.add(2);
+			set.add(3);
+			document.write(set);
+			document.write("<br />")
+			console.log(set);
+			// add的值不能重复
+			set.add(3);
+			console.log(set);
+			// null不能重复
+			set.add(null)
+			console.log(set);
+			set.add(null)
+			console.log(set);
+			//undefind不能重复
+			set.add(0)
+			console.log(set);
+			set.add(0)
+			console.log(set);
+			//NaN不能重复
+			set.add(NaN)
+			console.log(set);
+			set.add(NaN)
+			console.log(set);
+			//去重
+			var set2 = new Set("hello")
+			console.log(set2);
+			var set3 = new Set("aaaaaaabbbbbbbbccccccc")
+			console.log(set3);
+			//合并去重
+			var a = new Set([1, 2, 3, 4])
+			var b = new Set([3, 4, 5, 6])
+			var c = new Set([...a, ...b])
+			console.log(c);
+			//交集
+			var a = new Set([1, 2, 3, 4])
+			var b = new Set([3, 4, 5, 6])
+			var c = new Set([...a].filter(x => b.has(x)))
+			console.log(c);
+			//差集
+			var a = new Set([1, 2, 3, 4])
+			var b = new Set([3, 4, 5, 6])
+			var c = new Set([...a].filter(x => !b.has(x)))
+			console.log(c);
+		</script>
+
+	</head>
+	<body>
+	</body>
+</html>

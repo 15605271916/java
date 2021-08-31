@@ -1,0 +1,57 @@
+@w:80px;
+@h:60px;
+@cs2:red,blue,green;
+
+.c1{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.c2{
+	#b{
+		color:red;
+	}
+	.a{
+		color: blue;
+		border: 8px black solid;
+	}
+}
+
+#colors(){
+	a:blue;
+	b:green;
+}
+
+#h1{
+	border: 1px red solid;
+	width: @w;
+	height: @w*1.2;
+	.c1
+}
+
+#h2{
+	border: 1px blue solid;
+	width: @w+20px;
+	height: @h+100px;
+}
+
+#h3{
+	border: 2px green solid;
+	width: @w+-40px;
+	height: @h*0.9;
+	color: #colors[a];
+	// less版本过低,无法演示出map效果
+}
+
+#h4{
+	border: 3px yellow solid;
+	width: @w;
+	height: @w+100px;
+	.c2.a;
+}
+
+ each(@cs2,{
+  #div@{index}{
+    color: @value;
+  }
+}); 

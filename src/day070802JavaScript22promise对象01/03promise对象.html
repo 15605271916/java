@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>promise对象</title>
+		<!-- 程序执行的顺序：同步，异步 -->
+		<script>
+			console.log("开始")
+			var p1 = new Promise(function(resolve, reject) {
+				setTimeout(function() {
+					resolve('成功');
+				}, 2000);
+			});
+			console.log("异步继续执行");
+			p1.then(function() {
+				alert("成功之后调用的代码");
+			})
+			var p2 = new Promise(function(resolve, reject) {
+				setTimeout(function() {
+					reject('失败');
+				}, 2000);
+			});
+			console.log("异步继续执行");
+			p2.then(null, function() {
+				alert("失败之后调用的代码");
+			})
+			console.log("结束")
+			// -----------------------------------------------------------
+			var str = 'hello';
+			var o1 = Promise.resolve(str)
+			o1.then(function() {
+				alert(str)
+			})
+			// 链式反应
+			new Promise(function(resolve, reject) {
+				resolve(1);
+			}).then(function(data) {//1
+				console.log('成功' + data)
+				return data*2;
+			}).then(function(data) {//2
+				console.log(data);
+			}).then(function(data){//3
+				undefined
+				console.log(data);
+				return Promise.resolve("resolve");
+			}).then(function(data){//4
+				console.log(data);
+				return Promise.reject('reject');
+			}).then(function(data){//5
+				console.log('resolve:'+data);
+			},function(err){
+				console.log('relect:'+err)
+			})
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

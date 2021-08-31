@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>bind方法</title>
+		<script src="../../老师的/day20/jquery-1.10.2.js"></script>
+		<script>
+			function show1() {
+				alert("123")
+			}
+
+			function show2() {
+				alert("456")
+			}
+
+			function show3() {
+				alert("789")
+			}
+			
+			function show4(e){
+				alert("参数为："+e.data)
+				
+			}
+		</script>
+	</head>
+	<body>
+		<button id="btn2">按钮2</button>
+		<button id="btn3">按钮3</button>
+		<script>
+			$("#btn2").bind("click", show1);
+			$("#btn2").bind("click", show2);
+			// $("#btn2").bind("mouseover", show3);
+			$("#btn2").unbind("click", show2);
+			$("#btn2").bind("click", show3);
+			$("#btn2").bind("click", "bwf",show4);
+			
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>bom模型</title>
+		<script>
+			function show() {
+				alert('function show')
+			}
+			show()
+
+			document.write('a');
+			document.write('<br />');
+
+			document.write(window.innerHeight);
+			document.write('<br />');
+
+			document.write(window.innerWidth);
+			document.write('<br />');
+
+			document.write(window.outerHeight);
+			document.write('<br />');
+
+			document.write(window.outerWidth);
+			document.write('<br />');
+
+			function move() {
+				window.moveBy(15, 45)
+			}
+			document.write(location.href);
+			document.write('<br />');
+			document.write(location.protocol);
+			document.write('<br />');
+			document.write(location.hostname);
+			document.write('<br />');
+			document.write(location.port);
+			document.write('<br />');
+			document.write(location.pathname);
+			document.write('<br />');
+			
+			function q() {
+				location.href = 'https://www.baidu.com';
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="move()">move</button>
+		<br />
+		<button onclick="q()">jump</button>
+	</body>
+</html>

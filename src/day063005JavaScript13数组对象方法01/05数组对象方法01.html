@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>数组对象方法</title>
+		<script>
+			// 数组拼接
+			var array1 = [111, 222];
+			var array2 = [333];
+			var newarray = array1.concat(array2);
+			document.write(newarray);
+			document.write("<br />")
+			var array3 = ["a", "b", "c", "d","999"]
+			// 去除数组最后一个元素
+			document.write(array3)
+			document.write("<br />")
+			array3.pop();
+			document.write(array3)
+			document.write("<br />")
+			// 数组最后加上一个元素
+			array3.push("qqq");
+			document.write(array3)
+			document.write("<br />")
+			// 倒序排列
+			array3.reverse()
+			document.write(array3)
+			document.write("<br />")
+			//去除数组第一个元素
+			array3.shift()
+			document.write(array3)
+			document.write("<br />")
+			// 数组开头加一个元素
+			array3.unshift(100)
+			document.write(array3)
+			document.write("<br />")
+			// 在第二位置添加元素,下式中的“2”代表在第2个元素后面开始添加，“0”或“1”或“4”，代表占用其他元素几个位置。被占用的元素不显示，等同于删除。
+			array3.splice(2,0,"222","333")
+			document.write(array3)
+			document.write("<br />")
+			array3.splice(2,1,"777")
+			document.write(array3)
+			document.write("<br />")
+			array3.splice(2,4,"eee","rrr","ttt")
+			document.write(array3)
+			document.write("<br />")
+			// 排序
+			array4=[12,10,34,45,82,56,23,78,79,89]
+			document.write(array4.sort())
+			document.write("<br />")
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

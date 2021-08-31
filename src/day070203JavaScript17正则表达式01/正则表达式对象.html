@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>正则表达式regexp</title>
+		<script>
+			// var tel = 'a15605271916';
+			// var flag = true
+			// if (tel.length == 11) {
+			// 	for (var i = 0, i < tel.length; i++) {
+			// 		if (48 > tel.charCodeAt(i) || tel.charCodeAt(i) > 57) {
+			// 			flag = flase
+			// 			break
+			// 		}
+			// 	}
+			// } else {
+			// 	flag = flase
+			// 	break;
+			// 	if (flag = flase) {
+			// 		alert '格式错误;
+			// 	}
+			// }
+			// var reg = /^\d{11}$/;
+			// if (reg.test(tel)) {} else {
+			// 	alert '格式不对'
+			// }
+
+
+			// var h = 'hEllo bwf eEe'
+			// var s1 = /e/ig;
+			// document.write(h.match(s1))
+			// document.write('<br />')
+
+			// // test exec 都是做正则处理的，返回值不一样
+			// var str = 'hello ABC';
+			// var reg = new RegExp('b', 'i');
+			// var flag = reg.test(str);
+			// document.write(flag);
+			// document.write('<br />');
+			// reg = /b/i;
+			// var s=reg.exec(str)
+			// document.write(s)
+			// document.write('<br />')
+			
+			// var ss='abcd';
+			// reg=/a/;
+			// document.write(reg.exec(ss));
+			// document.write('<br />');
+			
+			// var ss='abcd';
+			// reg=/ac/;
+			// document.write(reg.exec(ss));
+			// document.write('<br />');
+			
+			// var ss='abcd';
+			// reg=/ab/;
+			// document.write(reg.exec(ss));
+			// document.write('<br />');
+			
+			// var ss='abcde';
+			// reg=/[^abc]/;
+			// document.write(reg.exec(ss));
+			// document.write('<br />');
+			
+			var ss='ab76q9';
+			reg=/[0-8]/;
+			document.write(reg.exec(ss));
+			document.write('<br />');
+			
+			var ss='abcd';
+			reg=/[a-c]/;
+			document.write(reg.exec(ss));
+			document.write('<br />');
+			
+			// var ss='100';
+			// reg=/10/;
+			// document.write(reg.exec(ss));
+			// document.write('<br />');
+			
+			var ss='adbcd';
+			reg=/^a\w*/;
+			document.write(reg.exec(ss));
+			document.write('<br />');
+			
+			var tel='15605271916';
+			reg=/^1[3-9]\d{9}$/;
+			document.write(reg.exec(tel));
+			document.write('<br />');
+			
+			
+			
+		</script>
+
+	</head>
+	<body>
+	</body>
+</html>

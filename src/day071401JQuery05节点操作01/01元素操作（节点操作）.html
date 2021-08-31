@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>节点操作</title>
+		<script src="../../老师的/day20/jquery-1.10.2.js"></script>
+		<script>
+			function insert1() {
+				var sp1 = "<span>span1</span>";
+				$("#div1").append(sp1);
+			}
+
+			function insert2() {
+				var sp1 = "<span>span1</span>";
+				$("#div1").prepend(sp1);
+			}
+
+			function insert3() {
+				var sp1 = "<span>span1</span>";
+				$("#div1").after(sp1);
+			}
+
+			function insert4() {
+				var sp1 = "<span>span1</span>";
+				$("#div1").before(sp1);
+			}
+
+			function del1() {
+				$("#u1").remove()
+			}
+
+			function del2() {
+				$("#u1 li").remove(":eq(1)")
+			}
+			
+			function clear1() {
+				$("#div2").empty()
+			}
+			
+		</script>
+		
+		<style>
+		.hr1{
+			color: red;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<div style="border: blueviolet 1px solid;" id="div1">div1</div><br />
+		<button onclick="insert1()">在后面插入元素(内部)</button><br />
+		<button onclick="insert2()">在前面插入元素(内部)</button><br />
+		<button onclick="insert3()">在后面插入元素(外部)</button><br />
+		<button onclick="insert4()">在前面插入元素(外部)</button><br />
+		<hr class="hr1"/>
+
+		<ul id="u1" style="border: blueviolet 1px solid;">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+		<button onclick="del1()">删除ul</button>
+		<button onclick="del2()">删除ul的某一子节点</button>
+		<hr class="hr1"/>
+		
+		<div style="border: blueviolet 1px solid;" id="div2">
+			div2<br />
+			<span>容器</span><br />
+			<b>加粗字体</b><br />
+		</div><br />
+		<button onclick="clear1()">清空div2</button>
+		<hr class="hr1"/>
+		
+	</body>
+</html>

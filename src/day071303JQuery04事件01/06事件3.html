@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../../老师的/day20/jquery-1.10.2.js"></script>
+		<script>
+			// $(document).ready(function(){
+			// 	alert($("#btn1")[0].innerHTML)
+			// })
+			// $(function() {
+			// 	alert($("#btn1")[0].innerHTML)
+			// })
+
+			// $(function() {
+			// 	alert($("#btn2").click(function() {
+			// 		alert("按钮2被单击")
+			// 	}))
+			// })
+
+			$("#btn2").hover(function() {
+					alert(11);
+				},
+				function() {
+					alert(22);
+				})
+		</script>
+	</head>
+	<body>
+		<button id="btn1">按钮1</button>
+		<button id="btn2">按钮2</button>
+
+
+	</body>
+</html>

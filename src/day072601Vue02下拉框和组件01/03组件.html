@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			{{msg}}
+			<myc1></myc1>
+
+		</div>
+		<script>
+
+			Vue.component("myc1", {
+				template: "<div>子组件1-{{msg}}</div>",
+				data() {
+					return {
+						msg: "qqq"
+					}
+				}
+			})
+			
+			new Vue({
+				el: "#app",
+				data: {
+					msg: "qwwer"
+				}
+			})
+		</script>
+
+	</body>
+</html>

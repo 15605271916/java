@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var q = ["111", "222", "333"];
+			document.write(typeof q);
+			document.write("<br />");
+			// fill填充（填充内容，从哪里，到哪里，（左不包右包）
+			document.write(q.fill("qq", 1, 2));
+			document.write("<br />");
+			// filter,按所需条件创建新数组
+			var age = [3, 5, 78, 16, 409, 50, 69];
+			var data = age.filter((age) => age > 18);
+			document.write(data);
+			document.write("<br />");
+			// 对象转换为数组
+			var obj = {
+				0: 3,
+				1: 4,
+				2: 5,
+				length: 3
+			};
+			w = Array.from(obj);
+			document.write(w);
+			document.write("<br />");
+			// 拓展运算符（用来拷贝对象）
+			var e = [7, 8, 9, 4, 5, 6];
+			var e2 = [...e];
+			document.write(e2);
+			document.write("<br />");
+			console.log(e2);
+			// 用于合并数组
+			var e3 = [...e, ...e2];
+			document.write(e3);
+			document.write("<br />");
+			// 复制对象
+			var r1 = {
+				"a": "A",
+				"b": "B",
+				"c": "C"
+			}
+			var r2 = {
+				...r1
+			}
+			document.write(r2);
+			document.write("<br />");
+			console.log(r2);
+			// 合并对象：后面的覆盖前面的
+			var r3 = {
+				"d": "D",
+				"a": "101"
+			}
+			var r4 = {
+				...r3,
+				...r1
+			}
+			console.log(r4);
+			var r5 = {
+				...r1,
+				...r3
+			}
+			console.log(r5);
+			// map对象
+			var m1 = new Map();
+			document.write(m1);
+			document.write("<br />");
+			console.log(m1);
+			m1.set("a", "A");
+			document.write(m1);
+			document.write("<br />");
+			console.log(m1);
+			// 对象添加属性
+			var obj = {
+				"a": "A",
+				"b": "B"
+			}
+			obj.c = "CC";
+			document.write("123" + obj);
+			document.write("<br />");
+			console.log(obj);
+			// 迭代
+			m2 = new Map()
+			m2.set("a", "A");
+			m2.set("b", "B");
+			m2.set("c", "C");
+			var enter = m2.entries();
+			document.write(enter);
+			document.write("<br />");
+			console.log(enter);
+			document.write(enter.next().value[1]);
+			document.write("<br />");
+			console.log(enter.next());
+			for (var [key, value] of m2.entries()) {
+				document.write("键：" + key + "；值：" + value);
+				document.write("<br />");
+			}
+			// foreach
+			var m3 = new Map();
+			m3.set("a", "A1");
+			m3.set("b", "B1");
+			m3.set("c", "C1");
+			m3.set("d", "D1");
+			console.log(m3);
+			m3.forEach(function(value, key) {
+				console.log(m3);
+				document.write(key + value);
+			});
+			document.write("<br />");
+			var m4 = [...m3];
+			console.log(m4);
+			document.write(m4);
+			document.write("<br />");
+		</script>
+
+
+
+	</head>
+	<body>
+	</body>
+</html>

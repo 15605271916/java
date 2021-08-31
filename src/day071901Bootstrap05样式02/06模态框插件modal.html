@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>模态框</title>
+		<link href="../../css/bootstrap.css" / rel="stylesheet">
+		<script src="../day(7.15)/jquery-1.10.2.js"></script>
+		<script src="../../js/bootstrap.js"></script>
+		<script>
+			function show() {
+				$("#myModal").modal({
+					keybord:true,
+					backdrop:false,
+				})
+			}
+
+			$(function() {
+				$("#myModal").on("show.bs.modal", function() {
+					alert("显示之前调用此alert")
+				})
+			})
+
+			$(function() {
+				$("#myModal").on("shown.bs.modal", function() {
+					alert("显示之后调用此alert")
+				})
+			})
+
+			$(function() {
+				$("#myModal").on("hide.bs.modal", function() {
+					alert("关闭之前调用此alert")
+				})
+			})
+
+			$(function() {
+				$("#myModal").on("hidden.bs.modal", function() {
+					alert("关闭之后调用此alert")
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+			开始模态框（属性控制）
+		</button>
+		<br />
+		<br />
+		<button class="btn btn-success btn-lg" onclick="show()">
+			另一方法开始模态框（方法控制）
+		</button>
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						提示信息标题
+						<button class="close" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+					</div>
+					<div class="modal-body">
+						信息内容1<br />
+						信息内容2<br />
+						信息内容3<br />
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-danger" data-dismiss="modal">取消</button>
+						<button class="btn btn-primary">确定</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

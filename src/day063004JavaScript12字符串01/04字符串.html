@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>字符串</title>
+		<script>
+			var qq="abcdefghijklmabcdefgnopqrstuvwxyz"
+			document.write(qq);
+			document.write("<br />");
+			document.write(qq.length);
+			document.write("<br />");
+			document.write(qq[15]);
+			document.write("<br />");
+			// 遇到特殊字符,使用转义符.
+			document.write("'bwf'");
+			document.write("<br />");
+			document.write("bwf\n\"51\"testing");
+			document.write("<br />");
+			document.write("q\\q");
+			document.write("<br />");
+			// 字符串方法
+			document.write("拼接:"+qq.concat(12138222));
+			document.write("<br />");
+			document.write("b最后出现位置："+qq.lastIndexOf("b"));
+			document.write("<br />");
+			document.write("匹配（如果匹配到，则输出匹配内容）："+qq.match("ma"));
+			document.write("<br />");
+			document.write("匹配（如果匹配不到，则输出null）："+qq.match("aa"));
+			document.write("<br />");
+			document.write("从[5]开始截取，一直到最后："+qq.slice(5));
+			document.write("<br />");
+			document.write("从[5]开始截取，一直到[12]："+qq.slice(5,12));
+			document.write("<br />");
+			// 注！！！slice截取字符串,从5-12,5包12不包
+			str="bwf-51-testing"
+			document.write("把字符串分割为子字符串数组:"+str.split("-"))
+			document.write("<br />");
+			qw="hellobwf";
+			document.write(qw);
+			document.write("<br />");
+			document.write(qw.substr(2,3));
+			document.write("<br />");
+			document.write(qw.substring(2,3));
+			document.write("<br />");
+			document.write(qw.slice(2,3));
+			document.write("<br />");
+			str="  aaa  bbb  ";
+			document.write(str)
+			document.write("<br />");
+			document.write("去除首尾空格："+qw.trim(str));
+			document.write("<br />");
+			document.write("剩余字符长度："+str.trim().length);
+			document.write("<br />");
+			document.write("去除首端空格："+qw.trimLeft(str));
+			document.write("<br />");
+			document.write("剩余字符长度："+str.trimLeft().length);
+			document.write("<br />");
+			document.write("去除尾端空格："+qw.trimRight(str));
+			document.write("<br />");
+			document.write("剩余字符长度："+str.trimRight().length);
+			document.write("<br />");
+			var p="123.1"
+			var arry=p.split(".");
+			document.write(arry[0]+"."+arry[1].padEnd(2,0))
+			document.write("<br />");
+			document.write("123.1".padEnd(6,0));
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

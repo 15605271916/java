@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 逻辑运算符（两个布尔类型的逻辑比较） -->
+		<script>
+			document.write(true && false)
+			document.write("<br />")
+
+			document.write(true || false)
+			document.write("<br />")
+
+			document.write(!false)
+			document.write("<br />")
+
+			document.write(!true)
+			document.write("<br />")
+
+			var x = 0;
+			var y = 0;
+			document.write(x > 1 && y++ > 0);
+			document.write("<br />")
+			// "短路与"，当遇到&&,左边是FALSE的情况,后面不做运算
+			document.write(y);
+			document.write("<br />")
+			// 当遇到||,左边是FALSE的情况,后面做运算
+			var x = 0;
+			var y = 0;
+			document.write(x > 1 || y++ > 0);
+			document.write("<br />")
+			document.write(y);
+			document.write("<br />")
+
+			// 条件运算符，控制语句if，其实也是条件语句，为了方便，专门有一个条件运算符操作
+
+			var x = 1;
+			var y = 1
+			document.write(x == 0 ? "是的" : "不是");
+			document.write("<br />")
+
+			var z = x == 0 ? x = 100 : x = 200;
+			document.write(z);
+			document.write("<br />")
+			// 分开写
+			
+			document.write(8 > a && a > 3);
+			document.write("<br />")
+			document.write(3 < a && a < 5);
+			document.write("<br />")
+		</script>
+
+
+	</head>
+	<body>
+	</body>
+</html>

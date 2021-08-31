@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>子继承父的属性和方法</title>
+		<script>
+			class Father {
+				show1() {
+					alert("父类")
+				}
+				constructor() {
+					alert("父类构造函数")
+				}
+			}
+			class Child extends Father {
+				show2() {
+					alert("子类")
+				}
+				constructor() {
+					super();
+					//子类constructor方法中必须有super，且必须出现在this之前
+					alert("子类构造函数")
+				}
+			}
+			let test = new Child();
+			test.show1()
+		</script>
+
+
+	</head>
+	<body>
+	</body>
+</html>

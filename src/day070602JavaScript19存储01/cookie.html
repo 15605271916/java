@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function add() {
+				document.cookie = "name=aaa;expires=Thu, 18 Dec 1999 12:00:00 GMT";
+				var date = new Date('2021-7-6 15:20:00');
+			}
+
+			function get() {
+				document.cookie = "sex=bbb";
+			}
+
+			function f1() {
+				document.cookie = "age=111";
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="add()">增加cookie1</button>
+		<br />
+		<button onclick="get()">获取cookie2</button>
+		<br />
+		<button onclick="f1()">获取cookie3</button>
+		<br />
+
+	</body>
+</html>

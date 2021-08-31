@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>弹性盒子</title>
+		<style>
+			.fc{
+				background-color: #00FFFF;
+				width: 230px;
+				height: 150px;
+				display: flex;
+				flex-direction: row;
+	/* 水平方向：/* justify-content: flex-end; */ 
+				justify-content: space-between;
+				/* justify-content: space-around; */
+				/* justify-content: space-evenly; */
+	/* 竖直方向:/* align-items: flex-end; */ 
+				align-items: center;
+				/* align-items: stretch; */
+	/*  换行方式： */flex-wrap: wrap;
+				/* flex-wrap: wrap-reverse; */
+			}
+			.fi1{
+				background-color: #ADFF2F;
+				width: 50px;
+				height: 50px;
+				text-align: center;
+				margin-left: auto;
+			}
+			.fi2{
+				background-color: #ADFF2F;
+				width: 50px;
+				height: 50px;
+				text-align: center;
+				margin-left: auto;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="fc">
+			<div class="fi1">flex item1</div>
+			<div class="fi2">flex item2</div>
+			<div class="fi1">flex item3</div>
+			<div class="fi2">flex item4</div>
+			<div class="fi1">flex item5</div>
+			<div class="fi2">flex item6</div>
+			<div class="fi1">flex item7</div>
+			<div class="fi2">flex item8</div>
+			
+		</div>
+		
+	</body>
+</html>

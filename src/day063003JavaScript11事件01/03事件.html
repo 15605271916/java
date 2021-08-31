@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>事件</title>
+		<script>
+			// 用户动作,写法为on开头,单击,双击,鼠标移上去,等.当事件触发时,调用Js
+			function show(){
+				alert(456)
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="alert(123)">按钮</button><br /><!-- 鼠标点击触发 -->
+		<button onclick="show()">按钮</button><br /><!-- 鼠标点击触发 -->
+		<button onmouseleave="alert(1213)">按钮</button><br /><!-- 鼠标离开触发 -->
+		<button onmousedown="alert(280)">按钮</button><!-- 鼠标按下触发（无需回弹） -->
+		
+	</body>
+</html>

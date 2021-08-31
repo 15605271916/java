@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>storage</title>
+		<!-- storage分为localStorage和sessionStorage，前者永久保存，后者暂时保存 -->
+		<script>
+			function add() {
+				localStorage.setItem("name", "bwf");
+				localStorage.setItem("sex", "man");
+				localStorage.setItem("age", "22");
+			}
+			function del(){
+				localStorage.removeItem("age", "22");
+			}
+			function add1(){
+				sessionStorage.setItem("tel",15605271916);
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="add()">增加</button>
+		<br />
+		<button onclick="del()">删除</button>
+		<br />
+		<button onclick="add1()">暂时保存</button>
+		<br />
+	</body>
+</html>

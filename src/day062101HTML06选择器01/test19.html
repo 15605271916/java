@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 伪类：样式控制，预先定义一些类，多了一个时间的功能。
+		比如：鼠标单击，移动，键盘，
+		 很多行，我们只需要奇数行，即为伪类-->
+		<style type="text/css">
+			a:link {
+				color: red;
+			}
+
+			a:visited {
+				color: green;
+			}
+
+			a:hover {
+				color: blue;
+			}
+
+			a:active {
+				color: yellow;
+			}
+
+			ul li:nth-child(odd) {
+				color: #0000FF;
+			}
+			input:checked{
+				color: #FF0000;
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="https://www.baidu.com" target="_blank">百度</a>
+		<a href="https://www.12306.cn" target="_blank">铁路</a>
+
+		<ul>
+			<li>xiangmu1</li>
+			<li>xiangmu2</li>
+			<li>xiangmu3</li>
+			<li>xiangmu4</li>
+			<li>xiangmu5</li>
+			<li>xiangmu6</li>
+			<li>xiangmu7</li>
+			<li>xiangmu8</li>
+
+
+		</ul>
+<input type="checkbox"/>篮球
+<input type="checkbox" checked="checked"/>足球
+<input type="checkbox"/>排球
+<input type="checkbox"/>羽毛球
+
+
+	</body>
+</html>

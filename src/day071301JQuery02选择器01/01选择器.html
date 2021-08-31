@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../../老师的/day20/jquery-1.10.2.js"></script>
+		
+	</head>
+	<body>
+		<p>段落1</p><br />
+		<p>段落2</p><br />
+		<span>容器</span><br />
+		<input type="password" /><br />
+		<input type="password" /><br />
+		<input type='checkbox' checked="checked"/>
+		<input type='checkbox' checked="checked"/>
+		<input type='checkbox' checked="checked"/>
+		<input type='checkbox' "/>
+		<input type='checkbox' "/><br />
+		<script>
+		window.onload=function(){}
+			
+			document.write($('p').length);
+			document.write('<br />');
+			document.write($('p')[0].innerHTML);
+			document.write('<br />');
+			document.write($(":password").length)
+			document.write('<br />');
+			document.write($(":checkbox").length)
+			document.write('<br />');
+			document.write($(":checked").length)
+			document.write('<br />');
+		
+		</script>
+	</body>
+	
+</html>

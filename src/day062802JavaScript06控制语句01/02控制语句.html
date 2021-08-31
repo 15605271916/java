@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 主要有 -->
+		<script>
+			// if
+			if (true) {
+				document.write(1);
+				document.write("<br />");
+				document.write(2);
+				document.write("<br />");
+			}
+			document.write(3);
+			document.write("<br />");
+			// if;else(可成对出现，但是只能运行一个)
+			if (false) {
+				document.write(1);
+				document.write("<br />");
+				document.write(2);
+				document.write("<br />");
+			} else {
+				document.write(3);
+				document.write("<br />");
+			}
+			// if;else;if
+			var x = 3;
+			if (x == 1) {
+				document.write("壹");
+				document.write("<br />");
+			} else if (x == 2) {
+				document.write("贰");
+				document.write("<br />");
+			} else if (x == 3) {
+				document.write("叁");
+				document.write("<br />");
+			} else {
+				document.write("其他");
+				document.write("<br />");
+			}
+
+			var x = 5;
+			switch (x) {
+				case 1:
+					document.write("壹");
+					document.write("<br />");
+					break;
+				case 2:
+					document.write("贰");
+					document.write("<br />");
+					break;
+				case 3:
+					document.write("叁");
+					document.write("<br />");
+					break;
+				case 4:
+					document.write("肆");
+					document.write("<br />");
+					break;
+				default:
+					document.write("其他");
+					document.write("<br />");
+			}
+			// 循环控制
+			document.write(1);
+			document.write("<br />");
+			document.write(2);
+			document.write("<br />");
+			document.write(3);
+			document.write("<br />");
+			document.write(4);
+			document.write("<br />");
+			document.write(5);
+			document.write("<br />");
+			document.write(6);
+			document.write("<br />");
+			document.write("分割线");
+			document.write("<br />");
+
+			var i = 0;
+			while (i < 5) {
+				document.write(++i);
+				document.write("<br />");
+			}
+
+			var r = 3;
+			do {
+				document.write(r++);
+				document.write("<br />");
+			} while (r < 5);
+
+			for (var j = 0; j < 4; j++) {
+				document.write("j的值：" + j);
+				document.write("<br />");
+			}
+			document.write("分割线");
+			document.write("<br />");
+			// break&continue,二者都有跳出语句块的含义,前者用于跳出整个循环,后者用于跳出本次循环
+			for (var q = 0; q < 5; q++) {
+				if (q < 3) {
+					document.write(q);
+					document.write("<br />");
+					continue;
+				} else {
+					document.write("buxing ");
+					document.write("<br />");
+					document.write("分割线");
+					document.write("<br />");
+				}
+			}
+			for (var p = 0; p < 5; p++) {
+				if (p < 3) {
+					document.write(p);
+					document.write("<br />");
+					break;
+				} else {
+					document.write("buxing ");
+				}
+			}
+
+			for (var s = 0; s < 4; s++) {
+				document.write("s的值：" + s);
+				for (var d = 0; d < 4; d++)
+					document.write("d的值：" + d);
+				document.write("<br />");
+			}
+			document.write("<br />");
+		</script>
+	</head>
+	<body>
+
+
+
+
+	</body>
+</html>
