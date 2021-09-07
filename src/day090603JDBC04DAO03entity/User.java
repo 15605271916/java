@@ -1,4 +1,4 @@
-package day090603JDBC04DAO02entity;
+package day090603JDBC04DAO03entity;
 
 import java.sql.Date;
 
