@@ -7,7 +7,7 @@ public class User {
 	private int id;
 	private String name;
 	private String sex;
-	private Date brithday;
+	private Date birthday;
 	
 	public int getId() {
 		return id;
@@ -27,12 +27,18 @@ public class User {
 	public void setSex(String sex) {
 		this.sex = sex;
 	}
-	public Date getBrithday() {
-		return brithday;
+	public Date getB() {
+		return birthday;
 	}
-	public void setBrithday(Date brithday) {
-		this.brithday = brithday;
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
 	}
+	public java.util.Date getBirthday() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
 	
 	
 

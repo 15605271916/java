@@ -18,7 +18,7 @@ public class Test4 {
 		user.setId(8);
 		user.setName("zh");
 //		user.setSex("0");
-		user.setBrithday(new Date(0));
+		user.setBirthday(new Date(0));
 		
 //		int count=userDAO.save(user);
 //		if(count==1) {

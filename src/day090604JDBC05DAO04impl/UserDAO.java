@@ -91,7 +91,7 @@ public class UserDAO implements IUserDao {
 			pcmd = conn.prepareStatement(sql);
 			pcmd.setString(1, user.getName());
 			pcmd.setString(2, user.getSex());
-			pcmd.setDate(3, new Date(user.getBrithday().getTime()));
+			pcmd.setDate(3, new Date(new java.util.Date().getTime()));
 			pcmd.setInt(4, user.getId());
 
 			return pcmd.executeUpdate();
@@ -127,7 +127,7 @@ public class UserDAO implements IUserDao {
 				User user = new User();
 				user.setId(id);
 				user.setName(rs.getString("name"));
-				user.setBrithday(rs.getDate("birthday"));
+				user.setBirthday(rs.getDate("birthday"));
 				return user;
 			}
 
@@ -163,7 +163,7 @@ public class UserDAO implements IUserDao {
 				user.setId(rs.getInt("id"));
 				user.setName(rs.getString("name"));
 				user.setSex(rs.getString("birthday"));
-				user.setBrithday(rs.getDate("birthday"));
+				user.setBirthday(rs.getDate("birthday"));
 
 				userList.add(user);
 
@@ -202,7 +202,7 @@ public class UserDAO implements IUserDao {
 				user.setId(rs.getInt("id"));
 				user.setName(rs.getString("name"));
 				user.setSex(rs.getString("birthday"));
-				user.setBrithday(rs.getDate("birthday"));
+				user.setBirthday(rs.getDate("birthday"));
 
 				userList.add(user);
 
@@ -243,7 +243,7 @@ public class UserDAO implements IUserDao {
 				user.setId(rs.getInt("id"));
 				user.setName(rs.getString("name"));
 				user.setSex(rs.getString("birthday"));
-				user.setBrithday(rs.getDate("birthday"));
+				user.setBirthday(rs.getDate("birthday"));
 
 				userList.add(user);
 
@@ -302,7 +302,7 @@ public class UserDAO implements IUserDao {
 				user1.setId(rs.getInt("id"));
 				user1.setName(rs.getString("name"));
 				user1.setSex(rs.getString("birthday"));
-				user1.setBrithday(rs.getDate("birthday"));
+				user1.setBirthday(rs.getDate("birthday"));
 
 				userList.add(user);
 
