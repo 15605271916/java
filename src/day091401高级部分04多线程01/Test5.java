@@ -1,4 +1,4 @@
-package day091401高级部分03多线程01;
+package day091401高级部分04多线程01;
 
 public class Test5 extends Thread{
 
