@@ -1,9 +1,9 @@
-package sun091701;
+package sun;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Test1 {
+public class Day091701 {
 
 	public static void main(String[] args) {
 		int a[]= {2,5,9,7,44,456};//定义一个整数数组a
