@@ -57,10 +57,5 @@ public class Test1 {
 		
 		System.out.println(f1.getType().getName());
 		
-		
-		
-		
-		
-		
 	}
 }

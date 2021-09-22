@@ -1,4 +1,4 @@
-package day081601入门和基础01;
+package day081601Java入门和基础01;
 
 public class Test1 {
 
